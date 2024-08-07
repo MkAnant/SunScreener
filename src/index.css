@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700,900&family=Public+Sans:wght@700&display=swap");
+
+/* || RESET || */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100dvh;
+    line-height: 1;
+    text-align: center;
+}
+
+/* || VARIABLES || */
+:root {
+    /* SIZE */
+    --size-xsmall: 0.75rem;
+    --size-small: 1rem;
+    --size-medium: 2rem;
+    --size-large: 4rem;
+    --size-xlarge: 6rem;
+
+    /* COLOR */
+    --primary-color: #f4592f;
+    --secondary-color: #5badaf;
+    --background-color: #f6efed;
+    --form-color: #e0bba325;
+}
+
+/* || FONTS || */
+.primary-font {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.secondary-font {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* || COLORS || */
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+/* || GENERAL-ELEMENTS || */
+
+/* HEADERS */
+h1 {
+    font-size: clamp(var(--size-large), 6vw, var(--size-xlarge));
+}
+
+h2 {
+    font-size: clamp(var(--size-medium), 4vw, var(--size-large));
+}
+
+p {
+    
+}
+
+input {
+    border: 1px solid black;
+    border-radius: var(--size-xsmall);
+    padding: var(--size-xsmall);
+}
+/* BUTTONS */

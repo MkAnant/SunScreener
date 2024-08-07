@@ -1,0 +1,47 @@
+button,
+input[type="submit"] {
+  padding: 10px;
+  width: clamp(120px,15vw,180px);
+
+  font-size: var(--size-xsmall);
+
+  border: solid 1px;
+  border-radius: var(--size-medium);
+
+  cursor: pointer;
+}
+
+.primary-button {
+  color: var(--primary-color);
+  background-color: transparent;
+  border-color: var(--primary-color);
+  transition: 0.5s ease;
+}
+
+.secondary-button {
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border-color: var(--background-color);
+  transition: 0.5s ease;
+}
+
+.primary-button:hover {
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  transition: 0.5s ease;
+  border-color: var(--background-color);
+}
+
+.secondary-button:hover {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  transition: 0.5s ease;
+  border-color: var(--primary-color);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(var(--size-xsmall), 4vw, var(--size-medium));
+}

@@ -1,0 +1,38 @@
+.local {
+    min-height: 100dvh;
+    background-color: var(--background-color);
+    padding: var(--size-medium) 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.local-form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.local-input {
+    background-color: var(--form-color);
+    border-radius: var(--size-xsmall);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: var(--size-medium);
+    padding: var(--size-medium);
+}
+
+.local-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.local-output input {
+    background-color: var(--background-color);
+    border: 1;
+}

@@ -1,0 +1,25 @@
+.landing {
+    min-height: 100dvh;
+    background-image: url(Landing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.landing-title {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(var(--size-xsmall),4vw,var(--size-medium));
+}
+
+@media (max-width: 768px) {
+    .landing {
+        background-position: center;
+        grid-template-columns:  2fr 1fr;
+    }
+}
