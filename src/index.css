@@ -64,13 +64,18 @@ h2 {
     font-size: clamp(var(--size-medium), 4vw, var(--size-large));
 }
 
+h3 {
+    font-size: clamp(var(--size-small), 2vw, var(--size-medium));
+}
+
 p {
-    
+    font-size: clamp(var(--size-xsmall), 1vw, var(--size-small));
 }
 
 input {
     border: 1px solid black;
     border-radius: var(--size-xsmall);
     padding: var(--size-xsmall);
+    font-size: clamp(var(--size-xsmall), 1vw, var(--size-small));
 }
 /* BUTTONS */

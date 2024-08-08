@@ -1,0 +1,30 @@
+.vitamin {
+    min-height: 100vh;
+    background-image: url('/Vitamin.png');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.vitamin-title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-medium);
+    margin-top: var(--size-large);
+}
+
+.vitamin-button .primary-button{
+    position: absolute;
+    left: var(--size-medium);
+    bottom: var(--size-medium);
+}
+
+.vitamin-button .secondary-button{
+    position: absolute;
+    right: var(--size-medium);
+    bottom: var(--size-medium);
+}
