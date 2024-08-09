@@ -21,6 +21,7 @@
     --size-medium: 2rem;
     --size-large: 4rem;
     --size-xlarge: 6rem;
+    --size-xxlarge: 8rem;
 
     /* COLOR */
     --primary-color: #f4592f;
@@ -54,28 +55,31 @@
 }
 
 /* || GENERAL-ELEMENTS || */
-
-/* HEADERS */
 h1 {
-    font-size: clamp(var(--size-large), 6vw, var(--size-xlarge));
+    font-size: clamp(var(--size-xlarge), 7vw, var(--size-xxlarge));
 }
 
 h2 {
-    font-size: clamp(var(--size-medium), 4vw, var(--size-large));
+    font-size: clamp(var(--size-large), 5vw, var(--size-xlarge));
 }
 
 h3 {
-    font-size: clamp(var(--size-small), 2vw, var(--size-medium));
+    font-size: clamp(var(--size-medium), 3vw, var(--size-large));
 }
 
 p {
-    font-size: clamp(var(--size-xsmall), 1vw, var(--size-small));
+    font-size: clamp(var(--size-xsmall), 1vw, var(--size-medium));
+}
+
+label {
+    font-size: clamp(var(--size-small), 1vw, var(--size-medium));
 }
 
 input {
-    border: 1px solid black;
+    font-size: clamp(var(--size-xsmall), 1vw, var(--size-medium));
+
+    border: 1px solid var(--secondary-color);
     border-radius: var(--size-xsmall);
     padding: var(--size-xsmall);
-    font-size: clamp(var(--size-xsmall), 1vw, var(--size-small));
+    margin-right: var(--size-medium);
 }
-/* BUTTONS */

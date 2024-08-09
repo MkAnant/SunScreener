@@ -1,6 +1,6 @@
 .landing {
     min-height: 100dvh;
-    background-image: url(Landing.png);
+    background-image: url(../../assets/Landing.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -14,12 +14,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: clamp(var(--size-xsmall),4vw,var(--size-medium));
+    gap: clamp(var(--size-xsmall), 4vw, var(--size-medium));
 }
 
 @media (max-width: 768px) {
     .landing {
         background-position: center;
-        grid-template-columns:  2fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 }

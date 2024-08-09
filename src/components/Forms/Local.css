@@ -1,10 +1,12 @@
 .local {
     min-height: 100dvh;
     background-color: var(--background-color);
-    padding: var(--size-medium) 0;
+    padding: clamp(var(--size-xsmall), 4vw, var(--size-medium)) 0;
+    overflow:hidden;
 
     display: flex;
     flex-direction: column;
+    gap: clamp(var(--size-xsmall), 4vw, var(--size-medium));
 }
 
 .local-form {
@@ -13,34 +15,40 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    gap: clamp(var(--size-xsmall), 4vw, var(--size-medium));
 }
 
 .local-input {
     background-color: var(--form-color);
+    border: 1px dotted var(--secondary-color);
     border-radius: var(--size-xsmall);
+    padding: clamp(var(--size-xsmall), 4vw, var(--size-medium)) 0;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: clamp(var(--size-xsmall), 4vw, var(--size-medium));
+}
 
-    gap: var(--size-medium);
-    padding: var(--size-medium);
+.local-input * {
+    place-content: center;
 }
 
 .local-output {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.local-output input {
+.output {
     background-color: var(--background-color);
     width: var(--size-xlarge);
     text-align: center;
     border: 0;
-    padding-inline: 0;
+    margin: 0;
 }
 
-.gmt:focus {
+.output:focus {
     outline: none;
     border: 0;
-    background-color: white;
 }

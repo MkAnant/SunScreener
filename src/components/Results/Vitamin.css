@@ -1,6 +1,6 @@
 .vitamin {
     min-height: 100vh;
-    background-image: url('/Vitamin.png');
+    background-image: url('../../assets/Vitamin.png');
     background-size: cover;
     background-position: center;
 
@@ -17,13 +17,13 @@
     margin-top: var(--size-large);
 }
 
-.vitamin-button .primary-button{
+.vitamin-button .primary-button {
     position: absolute;
     left: var(--size-medium);
     bottom: var(--size-medium);
 }
 
-.vitamin-button .secondary-button{
+.vitamin-button .secondary-button {
     position: absolute;
     right: var(--size-medium);
     bottom: var(--size-medium);
