@@ -125,7 +125,7 @@ const Local = () => {
             <label htmlFor="lon" className="secondary-font secondary-color">Lon : </label>
             <input type="number" name="lng" className="output" value={coordinates[1]} readOnly />
           </div>
-          <div class>
+          <div>
             <label htmlFor="gmt" className="secondary-font secondary-color">Gmt (+/-) *: </label>
             <input type="text" name="gmt" className="output" autoComplete="off" value={gmt} disabled={!gmtEditable} ref={inputRef}
             onChange={(e)=>setGmt(e.target.value)} onBlur={handleGmt}/>

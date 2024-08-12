@@ -10,7 +10,7 @@ import Vitamin from "./components/Results/Vitamin";
 function App() {
   return (
     <div className="app">
-      <Router>
+      <Router basename="/SunScreener">
         <AppProvider>
           <Routes>
             <Route path="/" element={<Landing />} />
