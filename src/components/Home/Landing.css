@@ -1,4 +1,4 @@
-.landing {
+#landing {
     min-height: 100dvh;
     background-image: url(../../assets/Landing.png);
     background-size: cover;
@@ -18,7 +18,7 @@
 }
 
 @media (max-width: 768px) {
-    .landing {
+    #landing {
         background-position: center;
         grid-template-columns: 2fr 1fr;
     }

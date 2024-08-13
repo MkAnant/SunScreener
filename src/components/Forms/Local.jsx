@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaEdit } from 'react-icons/fa';
 import axios from "axios";
 import { addHours, addMinutes, formatISO, parse, format } from 'date-fns';
+import Overlay from "../Overlay/Overlay";
 import Header from "../Header/Header";
 import Button from "../Button/Button";
 import "./Local.css"
@@ -47,12 +48,11 @@ const Local = () => {
 
   const handleDateTime = (e) => {
     const newDateTime = e.target.value;
-    const date = parse(dateTime, "yyyy-MM-dd'T'HH:mm", new Date());
+    const date = parse(newDateTime, "yyyy-MM-dd'T'HH:mm", new Date());
     const isoStringWithOffset = formatISO(date);
 
     setDateTime(newDateTime);
     setIsoTime(date.toISOString());
-    setGmt(isoStringWithOffset.slice(-6))
     setGmtEditable(false);
   }
 
@@ -66,10 +66,10 @@ const Local = () => {
     const newGmtDiff = newGmt.split(':').map(item=>Number(item));
 
     // Add hours
-    const newDateWithHours = addHours(date, newGmtDiff[0]);
+    const newDateWithHours = addHours(date, newGmtDiff[0]-5);
 
     // Add minutes
-    const finalDate = addMinutes(newDateWithHours, newGmtDiff[1]);
+    const finalDate = addMinutes(newDateWithHours, newGmtDiff[1]-30);
 
     // Iso format which automatically removes local gmt
     const formattedDate = new Date(finalDate).toISOString();
@@ -100,6 +100,7 @@ const Local = () => {
 
   return (
     <main className="local">
+      <Overlay></Overlay>
       <Header
         title={"Time and Location"}
         subtitle={"FOR WHEN AND WHERE TO CHECK THE UV INDEX"}

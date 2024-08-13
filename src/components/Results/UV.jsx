@@ -27,9 +27,17 @@ const UV = () => {
         setSafeTime(result["safe_exposure_time"]);
         setUvValue(result.uv);
         console.log(result);
+        console.log(data.iso);
       } catch (err) {
         console.log(err);
-        setSafeTime({st1:"15", st2:"25", st3:"35", st4:"45", st5:"55", st6:"65"})
+        setSafeTime({
+          st1:`${Math.floor(11.11*2.5)}`,
+          st2:`${Math.floor(11.11*3)}`,
+          st3:`${Math.floor(11.11*4)}`,
+          st4:`${Math.floor(11.11*5)}`,
+          st5:`${Math.floor(11.11*8)}`,
+          st6:`${Math.floor(11.11*15)}`
+        });
         setUvValue(11);
       }
     };

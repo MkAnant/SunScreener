@@ -1,0 +1,62 @@
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    will-change: opacity;
+}
+
+.ball {
+    position: absolute;
+    width: var(--size-xlarge);
+    height: var(--size-xlarge);
+    opacity: 0.8;
+
+    top: 15%;
+    left: -1vw;
+}
+
+.bird {
+    position: absolute;
+    width: var(--size-xxlarge);
+    height: var(--size-xlarge);
+    opacity: 0.8;
+    
+    right: 2vw;
+}
+
+.star {
+    position: absolute;
+    width: var(--size-medium);
+    height: var(--size-medium);
+    opacity: 0.8;
+
+    top: 75%;
+    right: 24vw;
+}
+
+.shell {
+    position: absolute;
+    width: var(--size-medium);
+    height: var(--size-medium);
+    opacity: 0.8;
+
+    top: 90%;
+    right: 2vw;
+}
+
+.chair {
+    position: absolute;
+    /* width: var(--size-xxlarge); */
+    height: calc(3*var(--size-xxlarge));
+    opacity: 0.8;
+
+    top: 45%;
+    left: -1vw;
+}
+
+@media (max-width:768px) {
+    .overlay *{
+        opacity: 0.2;
+    }
+}

@@ -1,0 +1,38 @@
+#faq {
+    min-height: 100dvh;
+    background-color: var(--background-color);
+    padding: clamp(var(--size-xsmall), 4vw, var(--size-medium)) 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: clamp(var(--size-xsmall), 4vw, var(--size-medium));
+}
+
+#faq p{
+    margin-top: var(--size-xsmall);
+}
+
+.faq-list{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(var(--size-xsmall), 4vw, var(--size-medium));
+    margin-bottom: var(--size-large);
+}
+
+.vitamin-button .primary-button {
+    position: absolute;
+    left: var(--size-medium);
+    bottom: var(--size-medium);
+}
+
+.vitamin-button .secondary-button {
+    position: absolute;
+    right: var(--size-medium);
+    bottom: var(--size-medium);
+}

@@ -3,6 +3,7 @@
     background: var(--dynamic-gradient, linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab));
     background-size: 400% 400%;
     animation: gradient 3s ease infinite;
+    padding: clamp(var(--size-xsmall), 4vw, var(--size-medium)) 0;
 
     display: flex;
     justify-content: center;

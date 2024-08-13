@@ -90,15 +90,17 @@ const Skin = () => {
             {skinType.map(
               ({ type: t, color: c, features: f, ethnicity: e }, index) => (
                 <tr key={index} className="secondary-font secondary-color">
-                  <td className="td-type">
-                    <input
-                      type="radio"
-                      id={`input-${c}`}
-                      name="skinInput"
-                      value={t}
-                      required
-                    />
-                    <label htmlFor={`input-${c}`}> {c}</label>
+                  <td>
+                    <div className="td-type">
+                      <input
+                        type="radio"
+                        id={`input-${c}`}
+                        name="skinInput"
+                        value={t}
+                        required
+                      />
+                      <label htmlFor={`input-${c}`}> {c}</label>
+                    </div>
                   </td>
                   <td className="td-color">
                     <div id={`color-${c}`}></div>

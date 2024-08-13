@@ -1,0 +1,8 @@
+.qna{
+    max-width: 50vw;
+    text-align: left;
+}
+
+.question {
+    font-size: clamp(var(--size-small), 2vw, var(--size-medium));
+}
