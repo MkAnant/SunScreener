@@ -29,7 +29,7 @@
 <h2 id="overview"> 📋 Overview</h2>
 
 <p align="justify"> 
-  SunScreener is a web application that calculates the optimal range of sun exposure for both vitamin D synthesis and sunburn prevention. By incorporating your location, timezone, and current UV levels, along with your selected skin type, SunScreener provides personalized recommendations and safe sun practices to help you enjoy the sun responsibly.
+  SunScreener is a web application that calculates the optimal range of sun exposure for both vitamin D synthesis and sunburn prevention. By incorporating your location, timezone and current UV levels, along with your selected skin type, SunScreener provides personalized recommendations and safe sun practices to help you enjoy the sun responsibly. This app in particular highlights my expertise in building dynamic, responsive and efficient front-end applications using React and its supporting libraries.
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -37,30 +37,32 @@
 <!-- FEATURES -->
 <h2 id="features"> 🌟 Features</h2>
 
-- **Personalized Sun Exposure Recommendations**: Get optimal sun exposure time based on your skin type, location, and timezone.
-- **Global Coverage**: Use SunScreener anywhere in the world, with accurate data from OpenUV and OpenStreetMap APIs.
-- **User-Friendly Interface**: Simple and intuitive UI for easy navigation and quick access to important information.
-- **Weather Integration**: Stay updated with local UV index levels to plan your outdoor activities accordingly.
-- **Responsive Design**: Works seamlessly on both mobile and desktop devices.
+<ul>
+  <li><strong>Personalized Sun Exposure Recommendations:</strong> Get optimal sun exposure time based on your skin type, location and timezone.</li>
+  <li><strong>Global Coverage:</strong> Use SunScreener anywhere in the world, with accurate data from OpenUV and OpenStreetMap APIs.</li>
+  <li><strong>User-Friendly Interface:</strong> Simple and intuitive UI for easy navigation and quick access to important information.</li>
+  <li><strong>Weather Integration:</strong> Stay updated with local UV index levels to plan your outdoor activities accordingly.</li>
+  <li><strong>Responsive Design:</strong> Works seamlessly on both mobile and desktop devices.</li>
+</ul>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- FAQs -->
 <h2 id="faqs"> ❓ FAQs</h2>
 
-### 1. Why to use SunScreener?
-SunScreener helps you calculate the optimal sun exposure duration for vitamin D synthesis while preventing sunburn. It provides personalized recommendations based on your location, timezone, and skin type.
+<h3>1. Why use SunScreener?</h3>
+<p>SunScreener helps you calculate the optimal sun exposure duration for vitamin D synthesis while preventing sunburn. It provides personalized recommendations based on your location, timezone, and skin type.</p>
 
-### 2. How does SunScreener calculate the optimal sun duration?
-SunScreener uses the OpenStreetMap API for location data and the OpenUV API for UV index information. It combines this data with your skin type and timezone to calculate the ideal sun exposure time.
+<h3>2. How does SunScreener calculate the optimal sun duration?</h3>
+<p>SunScreener uses the OpenStreetMap API for location data and the OpenUV API for UV index information. It combines this data with your skin type and timezone to calculate the ideal sun exposure time.</p>
 
-### 3. Can I use SunScreener anywhere in the world?
-Yes, SunScreener works globally, relying on APIs that provide worldwide coverage.
+<h3>3. Can I use SunScreener anywhere in the world?</h3>
+<p>Yes, SunScreener works globally, relying on APIs that provide worldwide coverage.</p>
 
-### 4. Does SunScreener account for sunscreen usage?
-Currently, SunScreener focuses on natural sun exposure without considering sunscreen. The app’s calculations are based on direct UV exposure.
+<h3>4. Does SunScreener account for sunscreen usage?</h3>
+<p>Currently, SunScreener focuses on natural sun exposure without considering sunscreen. The app’s calculations are based on direct UV exposure.</p>
 
-For more FAQs, [click here](https://mkanant.github.io/SunScreener/) then click on FAQs button.
+<p>For more FAQs, <a href="https://mkanant.github.io/SunScreener/">click here</a> and then click on the FAQs button.</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -74,12 +76,14 @@ For more FAQs, [click here](https://mkanant.github.io/SunScreener/) then click o
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
 
-- **React**: JavaScript library for building user interfaces.
-- **Vite**: Fast build tool for modern web projects.
-- **Axios**: Promise-based HTTP client for making API requests.
-- **JavaScript**: Core programming language for interactivity.
-- **HTML5**: Markup language for structuring the app.
-- **CSS3**: Stylesheet language for designing the app's appearance.
+<ul>
+  <li><strong>React:</strong> JavaScript library for building user interfaces.</li>
+  <li><strong>Vite:</strong> Fast build tool for modern web projects.</li>
+  <li><strong>Axios:</strong> Promise-based HTTP client for making API requests.</li>
+  <li><strong>JavaScript:</strong> Core programming language for interactivity.</li>
+  <li><strong>CSS3:</strong> Stylesheet language for designing the app's appearance.</li>
+  <li><strong>HTML5:</strong> Markup language for structuring the app.</li>
+</ul>
   
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -100,37 +104,46 @@ For more FAQs, [click here](https://mkanant.github.io/SunScreener/) then click o
 <!-- INSTALLATION -->
 <h2 id="installation"> ⚙️ Installation</h2>
 
-To view the website locally or make modifications, follow these steps:  
-### 1. Clone the repository:
+<p> To view the website locally or make modifications, follow these steps: </p>
+
+<h3> 1. Clone the repository: </h3>
+
 ```bash
 git clone https://github.com/MkAnant/Portfolio.git
 ```
-### 2. Navigate to the project folder:
+
+<h3> 2. Navigate to the project folder: </h3>
+
 ```bash
 cd SunScreener
 ```
-### 3. Install dependencies:
+
+<h3> 3. Install dependencies: </h3>
+
 ```bash
 npm install
 ```
-### 4. Start the development server:
+
+<h3> 4. Start the development server: </h3>
+
 ```bash
 npm run dev
 ```
-### 5. Open the website in a web browser:
+
+<h3> 5. Open the website in a web browser: </h3>
 Visit http://localhost:5173 (default port for Vite) to view the website locally.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-
 <!-- CONTRIBUTING -->
 <h2 id="contributing"> 🤝 Contributing</h2>
 
-Contributions are welcome! If you'd like to improve SunScreener, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature/bugfix.
-3. Submit a pull request with detailed information on your changes.
+<p> Contributions are welcome! If you'd like to improve SunScreener, follow these steps: </p>
+<ol>
+  <li>Fork the repository.</li>
+  <li>Create a new branch for your feature/bugfix.</li>
+  <li>Submit a pull request with detailed information on your changes.</li>
+</ol>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
