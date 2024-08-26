@@ -87,7 +87,7 @@
   
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<!-- FEATURES -->
+<!-- USAGE -->
 <h2 id="usage"> 📖 Usage</h2>
 
 <ol>
@@ -109,7 +109,7 @@
 <h3> 1. Clone the repository: </h3>
 
 ```bash
-git clone https://github.com/MkAnant/Portfolio.git
+git clone https://github.com/MkAnant/SunScreener.git
 ```
 
 <h3> 2. Navigate to the project folder: </h3>
